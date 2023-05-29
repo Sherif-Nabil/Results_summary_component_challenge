@@ -36,7 +36,7 @@ body {
 }
 
 .container {
-    max-width: 550px;
+    /* max-width: 550px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -47,7 +47,9 @@ body {
 
 .left_section,
 .right_section {
-    width: 275px;
+    width: 350px;
+    min-height: 450px;
+
     padding: 30px;
     border-radius: 25px;
     display: flex;
@@ -74,8 +76,8 @@ body {
 }
 
 .left_section .goal_circle {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -117,9 +119,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4% 4%;
+    padding: 5% 7%;
     font-size: 13px;
-    margin: 5px;
+    /* margin: 5px; */
     border-radius: 5px;
 }
 
@@ -134,7 +136,7 @@ body {
 }
 
 .categories .icon h3 {
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .categories p {
@@ -187,7 +189,7 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
     ;
     background-color: var(--darkGrayBlue);
-    padding: 4%;
+    padding: 5% 7%;
     border-radius: 25px;
     margin-top: 20px;
     cursor: pointer;
@@ -200,6 +202,18 @@ body {
 
 }
 
+@media (max-width:802px){
+    .left_section,
+    .right_section {
+        width: 275px;
+        min-height: 350px;
+
+    }
+    .left_section .goal_circle {
+        width: 150px;
+        height: 150px;
+    }
+}
 @media (max-width:552px) {
     body {
         align-items: start;
